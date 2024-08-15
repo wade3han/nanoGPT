@@ -16,4 +16,4 @@ gantry run --beaker-image seungjuh/open-instruct-public-240806-preview --venv ba
   --preemptible --env-secret WANDB_API_KEY=WANDB_API_KEY \
   --env-secret HF_TOKEN=HUGGING_FACE_HUB_TOKEN \
   --env WANDB_ENTITY=seungjuhan3 --env-secret OPENAI_API_KEY=openai_api_key --budget ai2/oe-adapt -- \
-  torchrun --standalone --nproc_per_node=4 train.py config/train_gpt2_4gpu_ladamw.py
+  torchrun --standalone --nproc_per_node=4 train.py /net/nfs.cirrascale/mosaic/seungjuh/nanoGPT/config/train_gpt2_4gpus_ladamw.py
